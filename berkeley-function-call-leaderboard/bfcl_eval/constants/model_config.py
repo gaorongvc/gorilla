@@ -160,16 +160,16 @@ api_inference_model_map = {
         is_fc_model=True,
         underscore_to_dot=True,
     ),
-    "gpt-5-2025-08-07-FC": ModelConfig(
-        model_name="gpt-5-2025-08-07-FC",
-        display_name="GPT-5-2025-08-07 (FC)",
+    "openai/gpt-5": ModelConfig(
+        model_name="openai/gpt-5",
+        display_name="GPT-5",
         url="https://openai.com/index/introducing-gpt-5/",
         org="OpenAI",
         license="Proprietary",
-        model_handler=OpenAIResponsesHandler,
+        model_handler=OpenAICompletionsHandler,
         input_price=1.25,
         output_price=10,
-        is_fc_model=True,
+        is_fc_model=False,
         underscore_to_dot=True,
     ),
     "gpt-5-2025-08-07": ModelConfig(
